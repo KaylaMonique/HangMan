@@ -7,8 +7,8 @@ namespace Hangman.Core.Game
     {
         private GallowsRenderer _renderer;
         private string _wordGuessed;
-      //  private string _guessProgress;
-        private string _addGuess;
+        //private string _guessProgress;
+        //private string _addGuess;
         private string[] wordList = { "umbrella", "dinosaur", "bird", "sleep", "jealous", "hospital", "story", "book", "reading", "motorcycle", "queen", "tomato",
                                   "atmosphere", "library", "music", "massage", "party", "restaurant", "paint", "homework" };
         private char[] _wordPlacement;
@@ -76,7 +76,7 @@ namespace Hangman.Core.Game
 
                 if (wordPlacement == _wordGuessed)
                 {
-                    Console.SetCursorPosition(0, 20);
+                    Console.SetCursorPosition(0, 17);
                     Console.WriteLine("Well Done!");
                    // break;
                 }
@@ -85,8 +85,9 @@ namespace Hangman.Core.Game
 
             if (wordPlacement != _wordGuessed)
             {
-                Console.SetCursorPosition(0, 20);
+                Console.SetCursorPosition(0, 17);
                 Console.WriteLine("Sorry, you lose!");
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("The correct guessed word supposed to be: " + _wordGuessed);
 
             }
