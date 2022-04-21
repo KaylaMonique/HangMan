@@ -77,7 +77,7 @@ namespace Hangman.Core.Game
                 if (wordPlacement == _wordGuessed)
                 {
                     Console.SetCursorPosition(0, 17);
-                    Console.WriteLine("Well Done!");
+                    Console.WriteLine("Well Done! You survived!");
                    // break;
                 }
                
@@ -86,7 +86,7 @@ namespace Hangman.Core.Game
             if (wordPlacement != _wordGuessed)
             {
                 Console.SetCursorPosition(0, 17);
-                Console.WriteLine("Sorry, you lose!");
+                Console.WriteLine("Sorry, you passed away!");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("The correct guessed word supposed to be: " + _wordGuessed);
 
