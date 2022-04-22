@@ -78,7 +78,7 @@ namespace Hangman.Core.Game
                 {
                     Console.SetCursorPosition(0, 17);
                     Console.WriteLine("Well Done! You survived!");
-                   // break;
+                    break;
                 }
                
             }
